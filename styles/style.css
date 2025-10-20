@@ -1,5 +1,126 @@
-/* Основные стили проекта. Это стили для темы, которую вы верстаете первой. */
-
 .page {
-  /* сохраните в разметке и стилях класс page у тега body. Он удобен, чтобы составлять селекторы для разных цветовых тем. */
+  font-family: var(--main-font-family), monospace;
+  background-image: var(--bg-image);
+  background-color: var(--bg-color);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+.header {
+  position: relative;
+  display: grid;
+  grid-template-rows: 35% 1fr 35%;
+  height: 100vh;
+  min-height: 668px;
+  padding: 10px;
+}
+
+.header__theme-menu {
+  align-self: center;
+  justify-self: end;
+}
+
+.header__theme-menu-list {
+  display: grid;
+  gap: 10px;
+}
+
+.header__theme-menu-item {
+  min-block-size: 26px;
+  min-inline-size: 70px;
+}
+
+.header__theme-menu-button {
+  inline-size: 100%;
+  block-size: 100%;
+  border: none;
+  background-color: transparent;
+  font-size: 18px;
+  color: var(--accent-color);
+  line-height: 18px;
+  text-transform: lowercase;
+}
+
+.header__theme-menu-button:hover {
+  outline: 1px solid var(--opacity-accent-color);
+}
+
+.header__theme-menu-button:focus {
+  outline: none;
+  border-bottom: 1px solid var(--accent-color);
+}
+
+.header__theme-menu-button_active {
+  outline: 1px solid var(--accent-color);
+}
+
+.decorated-zone::before {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  inline-size: 25px;
+  block-size: 25px;
+  border-inline-end: 1px solid var(--accent-color);
+  border-block-start: 1px solid var(--accent-color);
+  
+  content: '';
+}
+
+.decorated-zone::after {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  inline-size: 25px;
+  block-size: 25px;
+  border-inline-start: 1px solid var(--accent-color);
+  border-block-end: 1px solid var(--accent-color);
+  
+  content: '';
+}
+
+
+.header_rec {
+  position: absolute;
+  top: 10px;
+  right: 18px;
+  min-inline-size: 52px;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 25px;
+  color: var(--accent-color);
+  text-transform: uppercase;
+}
+
+.header_rec::after {
+  content: '';
+  position: absolute;
+  top: 8px;
+  right: 0;
+  inline-size: 10px;
+  block-size: 10px;
+  background-color: var(--accent-color);
+  box-shadow: 0 0 4px 2px var(--accent-color);
+  border-radius: 50%;
+}
+
+.header__title {
+  font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
+  font-weight: 700;
+  line-height: 83%;
+  color: #DB00FF;
+  text-shadow: 4px 4px 0 var(--accent-color);
+  text-transform: lowercase;
+}
+
+.header__subtitile {
+  align-self: center;
+  background-color: var(--accent-color);
+  min-inline-size: 355px;
+}
+
+.header__subtitle-text {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 23.4px;
 }

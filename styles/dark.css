@@ -13,8 +13,8 @@
   --accent-title-bg-color: #FF0070;
 }
 
-:root.theme-auto {
-  @media (prefers-color-scheme: dark) {
+@media (prefers-color-scheme: light) {
+  :root.theme-auto {
     --bg-image: url('../images/cover-image-dark.png');
     --bg-color: #000028;
     --title-color: #DB00FF;

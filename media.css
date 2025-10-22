@@ -1,0 +1,25 @@
+@media (min-width: 1024px) {
+	.header {
+		grid-template-rows: 40% 1fr 41%;
+	}
+
+	.header__theme-menu {
+		justify-self: center;
+    align-self: start;
+	}
+
+	.header__theme-menu-list {
+		display: flex;
+	}
+
+	.header__title {
+		align-self: end;
+	}
+
+	.accent__section {
+		gap: 20px;
+	}
+	.accent__section > .section__content {
+		grid-template-columns: repeat(3, 1fr);
+	}
+}

@@ -17,8 +17,9 @@
   display: none;
 }
 
-:root.theme-auto {
-  @media (prefers-color-scheme: light) {
+
+@media (prefers-color-scheme: light) {
+  :root.theme-auto {
     --bg-image: url('../images/cover-image-light.png');
     --bg-color: #FFF1F7;
     --title-color: #FFC2E6;
@@ -31,9 +32,9 @@
     --link-shadow-color: #FF0070;
     --accent-title-color: #353430;
     --accent-title-bg-color: #FF8DCB;
+  }
 
-    .header_rec {
-      display: none;
-    }
+  .header_rec {
+    display: none;
   }
 }

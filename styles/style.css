@@ -175,6 +175,7 @@
 }
 
 .header__subtitle-text {
+  display: block;
   font-size: 18px;
   font-weight: 700;
   line-height: 23.4px;
@@ -200,7 +201,7 @@
     grid-template-columns: 1fr 2fr;
   }
 
-  @media (min-width: 1024px){
+  @media (min-width: 1024px) {
     gap: 11px;
   }
 }

@@ -226,14 +226,10 @@
   }
 }
 
-.section__content-card {
-  display: grid;
-  gap: 10px;
-}
-
 .section__content-card-title {
   font-size: 18px;
   font-weight: 400;
+  margin-block-end: 10px;
   align-self: start;
   line-height: 23.4px;
   color: var(--accent-title-color);

@@ -2,7 +2,14 @@
   --bg-image: url('../images/cover-image-dark.png');
   --bg-color: #000028;
   --main-font-family: 'IBM Plex Mono';
-  --header-title-color: #DB00FF;
-  --accent-color: #FF0070;
-  --opacity-accent-color: #FF007066;
+  --title-color: #DB00FF;
+  --title-shadow: #FF0070;
+  --button-color: #FF0070;
+  --button-hover-color: #FF007066;
+  --content-title-color: #FF0070;
+  --content-text-color: #F1B2CE;
+  --decor-color: #FF0070;
+  --link-shadow-color: #FF8DCB;
+  --accent-title-color: #000028;
+  --accent-title-bg-color: #FF0070;
 }

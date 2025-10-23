@@ -10,13 +10,13 @@
 .header {
   display: grid;
   grid-template-rows: 35% 1fr 35%;
+  height: 100vh;
+  min-height: 668px;
   padding: 10px;
 }
 
 .decorated-zone {
   position: relative;
-  height: 100vh;
-  min-height: 668px;
 }
 
 .decorated-zone::before {
@@ -92,6 +92,7 @@
   color: var(--button-color);
   line-height: 18px;
   text-transform: lowercase;
+  cursor: pointer;
 }
 
 .header__theme-menu-button:hover {
@@ -135,16 +136,11 @@
   display: grid;
   gap: 50px;
   padding: 40px 10px;
-  background-color: var(--bg-color);
 }
 
 .section {
   display: grid;
   gap: 20px;
-
-  @media (min-width: 1024px) {
-    gap: 11px;
-  }
 }
 
 .section__title {
@@ -162,10 +158,6 @@
 
 .section__content:has(.gallery) {
   gap: 10px;
-
-  @media (min-width: 768px) {
-    gap: 20px;
-  }
 }
 
 .section__content-card-title {
@@ -195,10 +187,12 @@
 .content__link {
   text-decoration: none;
   text-shadow: 2px 2px 0 var(--link-shadow-color);
+  color: var(--content-text-color);
+  cursor: pointer;
 }
 
 .content__link:hover {
-  text-decoration: underline;
+  border-bottom: 1px solid var(--content-text-color);
 }
 
 .content__link:focus-visible {
@@ -221,13 +215,15 @@
   inline-size: 100%;
   max-block-size: 100%;
   object-fit: cover;
+  object-position: center;
 }
 
 footer {
   display: grid;
   align-items: center;
   justify-items: center;
-  background-color: var(--bg-color);
+  height: 100vh;
+  min-height: 668px;
 }
 
 .footer__title {
@@ -275,6 +271,10 @@ footer {
 
   .section {
     grid-template-columns: 1fr 2fr;
+  }
+
+  .section__content:has(.gallery) {
+    gap: 20px;
   }
 
   .accent__section {
@@ -338,6 +338,9 @@ footer {
 
   .header__title {
     align-self: end;
+  }
+  .section {
+    gap: 11px;
   }
 
   .accent__section {
